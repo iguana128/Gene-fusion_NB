@@ -14,7 +14,7 @@ The required packages including: <br/>
 - **DEG**: the deffiential expressed genes (DEGs) for the refined high-risk group patients for each gen fusion algorithm
 - **Processed_results**: the processed gene fusion results for downstream anslysis
 - **Patient group**: refined patient group and patient relationship table based on non-negative matrix factorization (NMF) analysis
-</br>
+
 - **Preprocessing**: scripts for generated processed fusion data for downstream analysis.<br/>
 - **Gene_fusion_format.R**: preprocessing the output results from sequencing analysis in **data** fold
 - **Gene_fusion_stat.R**: add the annotation information for downstream analysis (e.g. Figure 2c)
