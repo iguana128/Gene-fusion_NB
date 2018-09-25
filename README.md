@@ -16,6 +16,6 @@ The required packages including: <br/>
 - **Patient group**: refined patient group and patient relationship table based on non-negative matrix factorization (NMF) analysis
 
 - **Preprocessing**: scripts for generated processed fusion data for downstream analysis.<br/>
-- **Gene_fusion_format.R**: preprocessing the output results from sequencing analysis in **data** fold
-- **Gene_fusion_stat.R**: add the annotation information for downstream analysis (e.g. Figure 2c)
+ - **Gene_fusion_format.R**: preprocessing the output results from sequencing analysis in **data** fold
+ - **Gene_fusion_stat.R**: add the annotation information for downstream analysis (e.g. Figure 2c)
 
