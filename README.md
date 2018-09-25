@@ -19,3 +19,5 @@ The required packages including: <br/>
     * **Gene_fusion_format.R**: preprocessing the output results from sequencing analysis in **data** fold
     * **Gene_fusion_stat.R**: add the annotation information for downstream analysis (e.g., Figure 2c)
 
+- **Figure_data_generation**: scripts for figure generation.
+
