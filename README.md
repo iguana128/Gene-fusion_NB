@@ -21,3 +21,6 @@ The required packages including: <br/>
 
 - **Figure_data_generation**: scripts for figure generation.
 
+# Contact information
+If you have any question, please contact zhichao.liu@fda.hhs.gov. 
+
