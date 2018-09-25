@@ -4,3 +4,7 @@ This project aims to unravel the gene fusion profiles in 498 neuroblastoma patie
 - The sequencing analysis for gene fusion detection were carried out under HPC environmental.<br/>
 The details requirement and scripts for identifying the fusions were listed in <br/>
 **Gene_fusion_detection_command.txt** 
+<br/>
+- The downstream statistical analysis was conducted under R program. 
+The required packages including 
+
