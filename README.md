@@ -6,5 +6,5 @@ The details requirement and scripts for identifying the fusions were listed in <
 **Gene_fusion_detection_command.txt** 
 
 - The downstream statistical analysis was conducted under R (version 3.3.2) program. 
-The required packages including 
-
+The required packages including: <br/>
+**ggplot2, reshape2, RColorBrewer, survminer, survival, venneuler, VennDiagram, and NMF**
