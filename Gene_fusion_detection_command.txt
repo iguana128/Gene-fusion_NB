@@ -1,0 +1,34 @@
+To detect the gene fusions in the clinical samples, three pipelines named Chimerascan, SOAPfuse and Tophat were applied in our study. 
+The syntax of the pipelines for identifying the gene fusion events were used as follow. 
+All of the pipelines used the UCSC human genome (hg19) as reference genome.
+
+
+1.	The syntax for Chimerascan:
+    python $chimerascan/build/scripts-2.7/chimerascan_run.py --quals illumina --anchor-length=13 \
+	                    --filter-false-pos=$chimerascan/hg19_bodymap_false_positive_chimeras.txt \
+                        $chimerascan/align_index \
+                        $sampledir/SEQC_NB001_BD03U8ACXX_L7_CGATGT_1.fq.gz \
+                        $sampledir/SEQC_NB001_BD03U8ACXX_L7_CGATGT_2.fq.gz \
+                        $chimerascan/output_files/NB001
+                        
+
+2.  The syntax for SOAPfuse:
+	perl SOAPfuse-RUN.pl -c /$Configdir/genefusion/SOAPfuse-v1.27/config/config.txt \
+						-fd /$Sampledir/BR_WES_samples/SOAPfuse_data/ \
+						-l /$Runfiledir/genefusion/SOAPfuse-v1.27/p1_run_file.txt \
+						-o /$Outputdir/outfile_SOAPfuse_001/
+
+                        
+3.	The syntax for Tophat. The detection of gene fusion events with Tophat is a two-step process:
+	1)	Align the raw reads to the reference genome by using the TopHat2:
+		tophat2 -o tophat_NB001 -p 4 --fusion-search --bowtie1 --no-coverage-search \
+						-r 0 \
+						--mate-std-dev 80 \
+						--max-intron-length 100000 \
+						--fusion-min-dist 100000 \
+						--fusion-anchor-length 13 \
+						--fusion-ignore-chromosomes chrM \
+						$bowtie_index/myhg19_bowtie_index \
+						$sampledir/SEQC_NB001_BD03U8ACXX_L7_CGATGT_1.fq.gz $sampledir/SEQC_NB001_BD03U8ACXX_L7_CGATGT_2.fq.gz
+	2)	Generate the fusion candidates:
+		tophat-fusion-post -p 20 --num-fusion-reads 1 --num-fusion-pairs 2 --num-fusion-both 5 --skip-blast $bowtie_index/myhg19_bowtie_index
