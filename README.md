@@ -8,3 +8,6 @@ The details requirement and scripts for identifying the fusions were listed in <
 - The downstream statistical analysis was conducted under R (version 3.3.2) program. 
 The required packages including: <br/>
 **ggplot2, reshape2, RColorBrewer, survminer, survival, venneuler, VennDiagram, and NMF**
+
+# file desciption 
+- **data**: the gene susion calling results from three calling algorithms incluing ChimeraScan, SOAPfuse and TopHat-Fusion
