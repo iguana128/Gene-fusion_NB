@@ -12,4 +12,5 @@ The required packages including: <br/>
 # File/Fold desciption: 
 - **Data**: the gene fusion calling results from three calling algorithms incluing ChimeraScan, SOAPfuse and TopHat-Fusion
 - **DEG**: the deffiential expressed genes (DEGs) for the refined high-risk group patients for each gen fusion algorithm
-- **Processed_results**: the processed gene fusion results based on 
+- **Processed_results**: the processed gene fusion results for downstream anslysis
+
