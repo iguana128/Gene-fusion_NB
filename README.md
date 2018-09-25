@@ -9,5 +9,7 @@ The details requirement and scripts for identifying the fusions were listed in <
 The required packages including: <br/>
 **ggplot2, reshape2, RColorBrewer, survminer, survival, venneuler, VennDiagram, and NMF**
 
-# file desciption 
-- **data**: the gene susion calling results from three calling algorithms incluing ChimeraScan, SOAPfuse and TopHat-Fusion
+# file desciption: 
+- **data**: the gene fusion calling results from three calling algorithms incluing ChimeraScan, SOAPfuse and TopHat-Fusion
+- **DEG**: the deffiential expressed genes (DEGs) for the refined high-risk group patients for each gen fusion algorithm
+- **processed_results**: the processed gene fusion results based on 
