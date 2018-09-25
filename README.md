@@ -13,4 +13,5 @@ The required packages including: <br/>
 - **Data**: the gene fusion calling results from three calling algorithms incluing ChimeraScan, SOAPfuse and TopHat-Fusion
 - **DEG**: the deffiential expressed genes (DEGs) for the refined high-risk group patients for each gen fusion algorithm
 - **Processed_results**: the processed gene fusion results for downstream anslysis
+- **Patient group**: refined patient group and patient relationship table based on non-negative matrix factorization (NMF) analysis
 
